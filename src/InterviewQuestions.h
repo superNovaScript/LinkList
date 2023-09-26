@@ -1,5 +1,6 @@
 #pragma once
 #include "FerLinkList.h"
+#include "DoubleLinkList.h"
 namespace Questions
 {
 	namespace LinkList
@@ -134,7 +135,36 @@ namespace Questions
 	}
 
 	
+	namespace Second {
 
+		template <class T>
+		void swapFirstLast(SecondCase::DoubleLinkList<T> &list)
+		{
+			
+			size_t size = list.count();
+			
+
+			if (size == 0)
+			{
+				//do nothing
+			}
+			else if(size ==1)
+			{
+				// do nothing
+
+				
+			}
+			else
+			{
+				Node<T> head = list.getHead();
+				Node<T> tail = list.getTail();
+
+				head.value = tail.value;
+			}
+
+		}
+
+	}
 
 
 
